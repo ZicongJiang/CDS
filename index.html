@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Contrastive Denoising Score</title>
+  <title>WaveSDS</title>
   <link rel="icon" type="image/x-icon" href="">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,26 +52,24 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Contrastive Denoising Score for Text-guided Latent Diffusion Image Editing</h1>
+            <h1 class="title is-1 publication-title">WaveSDS: a wavelet representation of optimization target for image and texture editing and generation</h1>
 
-            <h1 class="is-size-3"> 🌈 CVPR2024 </h1>
+            <h1 class="is-size-3"> Thesis project (Ongoing) </h1>
             
             <div class="is-size-4 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=k6nzq08AAAAJ&hl=en" target="_blank">Hyelin Nam</a>,</span>
+              <span class="author-block2">
+                <a href="https://zicongjiang.github.io/zicong-jiang/" target="_blank">Zicong Jiang</a>,</span>
                 <span class="author-block">
-                  <a href="https://scholar.google.co.kr/citations?user=yexbg8gAAAAJ&hl=en" target="_blank">Gihyun Kwon</a>,</span>
+                  <a href="https://yufan-ren.com/" target="_blank">Yufan Ren</a>,</span>
                   <span class="author-block">
-                    <a href="https://scholar.google.co.kr/citations?user=HGF4a14AAAAJ&hl=en" target="_blank">Geon Yeong Park</a>,</span>
-                    <span class="author-block">
-                      <a href="https://scholar.google.co.kr/citations?user=HNMjoNEAAAAJ&hl=en" target="_blank">Jong Chul Ye</a>
+                    <a href="https://scholar.google.com/citations?user=EX3OYP4AAAAJ&hl=zh-CN" target="_blank">Sabine Süsstrunk</a></span>
                   </span>
                   </div>
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">KAIST(Korea Advanced Institute of Science and Technology)
+                    <span class="author-block">EPFL,</span>
                       <!-- <br>Conferance name and year</span> -->
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                    <span class="author-block2">DTU</span>
                   </div>
                   <div class="column has-text-centered">
                     <!-- <div class="publication-links"> -->
@@ -97,35 +95,35 @@
                   </span> -->
                 <!-- ArXiv abstract Link -->
                   <span class="link-block">
-                    <a href="https://arxiv.org/abs/2311.18608" target="_blank"
+                    <a target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     </ARXIV>
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
-                    <span>arXiv</span>
+                    <span>arXiv (coming soon)</span>
                   </a>
                   </span>
                 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/HyelinNAM/ContrastiveDenoisingScore" target="_blank"
+                    <a target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code (coming soon)</span>
                   </a>
                   </span>
                   
                   <!-- Youtube link -->
                   <span class="link-block">
-                    <a href="https://www.youtube.com/watch?v=jLaIOSE9nkw" target="_blank"
+                    <a target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-youtube"></i>
                     </span>
-                    <span>Youtube</span>
+                    <span>Youtube (coming soon)</span>
                   </a>
                   </span>
 
@@ -140,18 +138,31 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="columns is-centered has-text-centered">
-      <!-- <div class="container"> -->
-      <!-- <img src="static/images/results/sample.gif" alt="Examples" width="400"></src> -->
-      <video width="400" height="400" autoplay muted loop>
-        <source src="static/videos/sample.mp4" type="video/mp4">
-      </video>
-      <!-- </div> -->
+      <div class="column is-one-third">
+        <h3 class="title is-5">2D Image Editing</h3>
+        <video width="400" height="400" autoplay muted loop>
+          <source src="static/videos/2d_editing.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-third">
+        <h3 class="title is-5">3D Texture Generation</h3>
+        <video width="400" height="400" autoplay muted loop>
+          <source src="static/videos/3d_generation.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-third">
+        <h3 class="title is-5">3D Texture Editing</h3>
+        <video width="400" height="400" autoplay muted loop>
+          <source src="static/videos/3d_editing.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
   </div>
 </section>
 
+
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<!-- <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -165,7 +176,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End paper abstract -->
 
 <!-- Main Idea -->
@@ -175,16 +186,17 @@
       <div class="column is-four-fifths">
         <h2 class="title is-4">Main Idea</h2>
         <div class="content has-text-justified">
-          <img src="static/images/key_observation.png" alt="Key observation"/>
+          <img src="static/images/2dpipeline.jpg" alt="2D pipeline for image editing"/>
           <p>
-          </br> Aside from the actual image generation processes, both DDS and CUT approaches attempt to align the features from the reference and reconstruction branches. 
-          With the aim of regulating the excessive structural changes, we are interested in the key idea from CUT, which is shown effective in maintaining input structure.
+            Unlike previous image editing methods based on SDS, we introduce <b>wavelets</b> to characterize the optimization objectives, achieving better results for specific frequencies.
           </p>
-          <img src="static/images/method_overview.png" alt="Overview of method"/>
+          <img src="static/images/3dresults.jpg" alt="3D pipeline for texture generation"/>
           <p>
-            The original CUT algorithm requires training an encoder to extract spatial information from the input image, which is inefficient. 
-            On the other hand, we calculate CUT loss utilizing <b> the latent representation of self-attention layers</b>.
-            Those features have been shown to contain rich spatial information, disentangled from semantic information, which is exactly CUT loss requires.
+            For the task of text-based 3D texture generation, we use wavelets to characterize the <b>triplane</b> and employ a <b>global-local update mechanism</b> to generate textures for complex objects such as human body meshes.
+          </p>
+          <img src="static/images/3dediting.jpg" alt="3D pipeline for texture editing"/>
+          <p>
+            Our pipeline can also be used for the task of 3D mesh texture editing. By updating specific wavelet frequencies, we can edit the texture of the mesh for specific frequencies, such as low or high frequencies.
           </p>
         </div>
         </div>
@@ -218,7 +230,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
       <div class="container">
-        <h2 class="title is-4"></br>Additional Results</h2>
+        <h2 class="title is-4"></br>Additional Results for Image editing</h2>
           <!-- <div class="content has-text-justified">
             <p>
               Our Consistent Denoising Score (CDS) translates source images with a well-balanced interplay between maintaining the structural elements of the source image and transforming the content in alignment with the target text prompt.
@@ -227,24 +239,60 @@
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item">
             <!-- Your image here -->
-            <img src="static/images/results/results1.png" alt="MY ALT TEXT" width="1000"/>
+            <img src="static/images/results/2d1.png" alt="MY ALT TEXT" width="1000"/>
             <!-- <h2 class="subtitle has-text-centered">
               First image description.
             </h2> -->
           </div>
           <div class="item">
             <!-- Your image here -->
-            <img src="static/images/results/results2.png" alt="MY ALT TEXT" width="1000"/>
+            <img src="static/images/results/2d2.png" alt="MY ALT TEXT" width="1000"/>
             <!-- <h2 class="subtitle has-text-centered">
               Second image description.
             </h2> -->
           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+      <div class="container">
+        <h2 class="title is-4"></br>Additional Results for 3D texture generation and editing</h2>
+          <!-- <div class="content has-text-justified">
+            <p>
+              Our Consistent Denoising Score (CDS) translates source images with a well-balanced interplay between maintaining the structural elements of the source image and transforming the content in alignment with the target text prompt.
+            </p>
+          </div> -->
+        <div id="results-carousel" class="carousel results-carousel">
           <div class="item">
             <!-- Your image here -->
-            <img src="static/images/results/cat2animal.png" alt="MY ALT TEXT" height="1200" width="1000"/>
+            <img src="static/images/results/3d.jpg" alt="MY ALT TEXT" width="1000"/>
+            <!-- <h2 class="subtitle has-text-centered">
+              First image description.
+            </h2> -->
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/results/3d1.png" alt="MY ALT TEXT" width="1000"/>
+            <!-- <h2 class="subtitle has-text-centered">
+              First image description.
+            </h2> -->
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/results/3d2.png" alt="MY ALT TEXT" width="1000"/>
             <!-- <h2 class="subtitle has-text-centered">
               Second image description.
             </h2> -->
+          </div>
           </div>
         </div>
       </div>
